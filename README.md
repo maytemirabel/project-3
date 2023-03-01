@@ -6,11 +6,16 @@
 ## Criteria A: Planning
 
 ### Problem Definition:
+Mai is a wealthy art enthusiast who constantly purchases expensive and rare art pieces for her personal gallery. However, considering the number of artworks she has bought, she no longer knows how many she owns nor their respective origins! She is in immediate need of a digital gallery that will allow her to concisely keep track of all of the art works she owns.
  
-
 ### Success Criteria:
-
-1.
+1. The application must have a secure registration and login system.
+2. The user will be able to input all attributes (title, artist, date, and description of the art piece) which will be stored in the database through the interface.
+3. The user will have the capacity to search for art pieces by title, artist, and/or date. 
+4. The application will allow the user to view all values stored in the database. 
+5. The application will include a “forgot password” button option if the user forgets their password. 
+6. The application must encrypt the user’s password in the local SQL database.
+7. The application must contain a login screen, registration screen, home screen (gallery), screen to record art pieces, and screen to view the past inputted data; in total 5 unique screens.
 
 ### Design Statement
 
@@ -50,10 +55,29 @@ Figure 4. The UML Diagram For the Classes In the Application
 
 
 ### Record of Tasks
+| Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
+|---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1 | Meet with client  | Understand the requirements needed for the project  | 10 min | Feb 22 | A |
+| 2 | Write problem context | | 20 min | Feb | A | 
+
+
+
+| 2 | Create Bill of Materials | Gather and gain possession of materials needed to collect data | 5 min  | Nov 22    | A  |
+| 3 | Design Statement | Describe and articulate a clear outline of the project | 10 min | Nov 24 | A |
+| 6 | Test #1 | Ensure connection and code are successful | 60 min | Dec 01 | B | 
+| 7 | Develop MVP (Minimum Viable Product) | Test basic product before moving towards the final one | 120 min | Dec 02 | B |
+| 9 | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
+
+
+|  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Dec 12 | D |
+|  | Polish details on repository | Gather everything that must be added | 40 min | Dec 12 | B |
+
 
 ## Criteria C: Development
 
 ### Techniques Used
+
+
 
 
 ### GUI Creating Using KivyMD
