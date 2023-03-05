@@ -6,7 +6,7 @@
 ## Criteria A: Planning
 
 ### Problem Definition:
-Mai is a wealthy art enthusiast who constantly purchases expensive and rare art pieces for her personal gallery. However, considering the number of artworks she has bought, she no longer knows how many she owns nor their respective origins! She is in immediate need of a digital gallery that will allow her to concisely keep track of all of the art works she owns.
+Mai is a wealthy art enthusiast who constantly purchases expensive and rare art pieces for her personal gallery. However, considering the number of artworks she has bought, she no longer knows how many she owns nor their respective origins! She is in immediate need of a digital gallery that will allow her to concisely keep track of all of the art works she owns. In addition, Mai required the app to be secured through a login system, for the data to be stored in a dataset, and for the user interface to be clear and concise. 
  
 ### Success Criteria:
 1. The application must have a secure registration and login system.
