@@ -32,6 +32,7 @@ I will design and construct a digital gallery for a client who requires an admin
 ![IMG_0654](https://user-images.githubusercontent.com/105724334/222962622-de6ad49a-9667-4188-968f-517435ee7abb.jpg)
 
 ##### Figure 1. The System Diagram For the Application
+The system diagram is a visual model of the application, its components and their interactions. As shown on Fig. 1, the input is done through a keyboard and the output is manifested on the display (screen.) The application will run on Python and KivyMD, using the software program PyCharm via the file names project3.py and project3.kv, respectively. Additionally, the various inputs from the user will all be stored in an SQL database called project3.db.
 
 ### Wireframe
 
