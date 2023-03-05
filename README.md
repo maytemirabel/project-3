@@ -29,9 +29,9 @@ I will design and construct a digital gallery for a client who requires an admin
 ## Criteria B: Solution
 
 ### System Diagram
+![IMG_0654](https://user-images.githubusercontent.com/105724334/222962622-de6ad49a-9667-4188-968f-517435ee7abb.jpg)
 
-
-Figure 1. The System Diagram For the Application
+##### Figure 1. The System Diagram For the Application
 
 ### Wireframe
 
