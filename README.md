@@ -6,7 +6,7 @@
 ## Criteria A: Planning
 
 ### Problem Definition:
-Mai is a wealthy art enthusiast who constantly purchases expensive and rare art pieces for her personal gallery. However, considering the number of artworks she has bought, she no longer knows how many she owns nor their respective origins! She is in immediate need of a digital gallery that will allow her to concisely keep track of all of the art works she owns. In addition, Mai required the app to be secured through a login system, for the data to be stored in a dataset, and for the user interface to be clear and concise. 
+Mai is a wealthy art enthusiast who constantly purchases expensive and rare art pieces for her personal gallery. However, considering the number of artworks she has bought, she no longer knows how many she owns nor their respective origins! She is in immediate need of a digital gallery that will allow her to concisely keep track of all of the art works she owns. In addition, Mai requires the app to be secured through a login system, for the data to be stored in a dataset, and for the user interface to be clear and concise. 
  
 ### Success Criteria:
 1. The application must have a secure registration and login system.
@@ -18,9 +18,10 @@ Mai is a wealthy art enthusiast who constantly purchases expensive and rare art 
 7. The application must contain a login screen, registration screen, home screen (gallery), screen to record art pieces, and screen to view the past inputted data; in total 5 unique screens.
 
 ### Design Statement
-
+I will design and construct a digital gallery for a client who requires an administrative system for artworks: Mai. The gallery will manage all of the art pieces Mai has purchased and will purchase in the future. Imperative information about each art piece such as the title, artist, date it was created, and a description of it, will be saved, too. All of the data will be saved in a local database using SQLite. The application will be programmed using the software Pycharm, the language Python and KivyMD for GUI construction. The project will be completed in 4 weeks and will be evaluated according to the criteria set above. 
 
 ### Rationale for Proposed Solution
+
 
 
 [^1]: “Van Gogh Immersive Art Exhibition Is Coming to Dublin.” Her.ie, www.her.ie/life/van-gogh-dublin-an-immersive-art-experience-is-coming-to-the-rds-548629. Accessed 13 Feb. 2023.
