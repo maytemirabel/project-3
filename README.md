@@ -15,7 +15,7 @@ Mai is a wealthy art enthusiast who constantly purchases expensive and rare art 
 4. The application will allow the user to view all values stored in the database. 
 5. The application will include a “forgot password” button option if the user forgets their password. 
 6. The application must encrypt the user’s password in the local SQL database.
-7. The application must contain a login screen, registration screen, home screen (gallery), screen to record art pieces, and screen to view the past inputted data; in total 5 unique screens.
+7. The application must contain a login screen, registration screen, home screen, screen to record art pieces, and screen to view the past inputted data; in total 5 unique screens.
 
 ### Design Statement
 I will design and construct a digital gallery for a client who requires an administrative system for artworks: Mai. The gallery will manage all of the art pieces Mai has purchased and will purchase in the future. Imperative information about each art piece such as the title, artist, date it was created, and a description of it, will be saved, too. All of the data will be saved in a local database using SQLite. The application will be programmed using the software Pycharm, the language Python and KivyMD for GUI construction. The project will be completed in 4 weeks and will be evaluated according to the criteria set above. 
