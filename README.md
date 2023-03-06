@@ -68,14 +68,33 @@ Figure 4. The UML Diagram For the Classes In the Application
 ### Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1 | Meet with client  | Understand the requirements needed for the project  | 10 min | Feb 22 | A |
-| 2 | Write problem context | | 20 min | Feb | A | 
+| 1 | Meet with client  | Discuss and understand the requirements needed for the project  | 10 min | Feb 22 | A |
+| 2 | Brainstorm and write the problem context | A concise problem definition of what the client is requires | 20 min | Feb 22 | A | 
+| 3 | Build success criteria | 
+| 4 | Write design statement | A descriptive and articulated outline of the project | 
+| 5 | 
+| 6 | 
+| 7 | 
+| 8 |
+| 9 | 
+| 10 |
+| 11 | 
+| 12 |
+| 13 |
+| 14 |
+| 15 |
+| 16 |
+| 17 |
+| 18 |
+| 19 |
+| 20 |
+| 21 |
+| 22 |
+| 23 |
+| 24 |
 
 
 
-| 2 | Create Bill of Materials | Gather and gain possession of materials needed to collect data | 5 min  | Nov 22    | A  |
-| 3 | Design Statement | Describe and articulate a clear outline of the project | 10 min | Nov 24 | A |
-| 6 | Test #1 | Ensure connection and code are successful | 60 min | Dec 01 | B | 
 | 7 | Develop MVP (Minimum Viable Product) | Test basic product before moving towards the final one | 120 min | Dec 02 | B |
 | 9 | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
 
