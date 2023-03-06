@@ -72,8 +72,8 @@ Figure 4. The UML Diagram For the Classes In the Application
 | 2 | Brainstorm and write the problem context | A concise problem definition of what the client is requires | 20 min | Feb 22 | A | 
 | 3 | Build success criteria | 
 | 4 | Write design statement | A descriptive and articulated outline of the project | 
-| 5 | 
-| 6 | 
+| 5 | Describe rationale for proposed solution | 
+| 6 | Draw system diagram and write the caption |
 | 7 | 
 | 8 |
 | 9 | 
