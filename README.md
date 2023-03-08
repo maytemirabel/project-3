@@ -87,11 +87,10 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 14 | Code password encryption | Secure storage of user's password as it will be encrypted utilizing sha256 | 45 min | Feb 28 | C |
 | 15 | Create menu page | A page where the user, once logged into the application, can choose what to do | 90 min | Mar 1 | C |
 | 16 | Set up table for all artworks | A table inside the database that includes all of the data concening the art pieces | 20 min | Mar 1 | C |
-| 17 | Create an add artwork page | A page where the user will be able to add an art piece, its details and save it. | 70 min | Mar 2 | C |
+| 17 | Create an add artwork page | A page where the user will be able to add an art piece, its details and save it | 70 min | Mar 2 | C |
 | 18 | Add date picker to add artwork page | Date picker will be implemented and when used, the program should display a calendar for the user to choose the date | 60 min | Mar 2 | C |
-| 19 |
-
-| 20 |
+| 19 | Create artwork history page | A page that allows the user to view all of the art works stored within the database | 80 min | Mar 2 | C |
+| 20 | 
 | 21 |
 | 22 |
 | 23 |
@@ -100,8 +99,6 @@ The wireframe provides a visual representation of the gallery’s outline of the
 
 18	Add checkboxes to add flight system	Implement the usage of checkboxes for value selection. Have checkboxes for different pieces of flight information for the user to select from.	1 hour	2/27/2023	C
 19	Create search system for specific flights	Allow the user to search for specific flights by flight number and date.	1 hour	2/28/2023	C
-20	Create airport map page	Have a page that shows a map of the airport and the current date's flights at their gate	2 hours	3/1/2023	C
-21	Create flight history page	Have a page that shows all values stored within the database	1 hour	3/1/2023	C
 22	Validate all buttons and their actions	Making sure that each button executes the expected task and is accurately displayed within the application	1 hour	3/1/2023	C
 23	Create table displaying the results of searched flights	Retrieving requested data from the database of all flights, and displaying them in an organized table	1 hour	3/1/2023	C
 
