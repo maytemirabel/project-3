@@ -4,7 +4,6 @@
 ###### Vincent Van Gogh Exhibition in Dublin, Unknown [^1]
 
 ## Criteria A: Planning
-
 ### Problem Definition:
 Mai is a wealthy art enthusiast who constantly purchases expensive and rare art pieces for her personal gallery. However, considering the number of artworks she has bought, she no longer knows how many she owns nor their respective origins! She is in immediate need of a digital gallery that will allow her to concisely keep track of all of the art works she owns. In addition, Mai requires the app to be secured through a login system, for the data to be stored in a dataset, and for the user interface to be clear and concise. 
  
@@ -26,7 +25,6 @@ For the GUI, I will be using the KivyMD library, which is a framework that creat
 
 To store inputted data, I will be using SQLite as the database. SQLite is simple to use, allows for multiple database files to be accessed simultaneously, and has cross-platform compatibility[^5]. These features play an essential role as it means that it will take a shorter time to create a program that meets the client’s needs. SQLite also counts with the advantage of embedding, which means that the database is integrated into the application and does not require a separate server process[^6]. This is particularly useful and adequate for this project as it is small-scale and the data can be stored locally. While SQLite does not have the same multi-user capabilities as MySQL and PostgreSQL, this is not an issue for this program as it is intended for personal use.
 
-
 [^1]: “Van Gogh Immersive Art Exhibition Is Coming to Dublin.” Her.ie, www.her.ie/life/van-gogh-dublin-an-immersive-art-experience-is-coming-to-the-rds-548629. 
 [^2]: Smith, Jane. "Most Popular Programming Languages in 2021." Northeastern University Graduate Programs, Northeastern University, 12 April 2021, https://www.northeastern.edu/graduate/blog/most-popular-programming-languages/.
 [^3]: Jha, Alok. "Advantages and Disadvantages of Python." DataFlair, DataFlair, 24 April 2020, https://data-flair.training/blogs/advantages-and-disadvantages-of-python/.
@@ -35,10 +33,8 @@ To store inputted data, I will be using SQLite as the database. SQLite is simple
 [^6]:Morris, Kristin. "SQLite: A Lightweight Relational Database Management System." BuiltIn, BuiltIn, 11 June 2019, https://builtin.com/data-science/sqlite#:~:text=Benefits%20of%20SQLite,require%20low%2Dmemory%20footprint%20systems. 
 
 ## Criteria B: Solution
-
 ### System Diagram
 ![IMG_0654](https://user-images.githubusercontent.com/105724334/222962622-de6ad49a-9667-4188-968f-517435ee7abb.jpg)
-
 ##### Figure 1. The System Diagram For the Application
 The system diagram is a visual model of the application, its components and their interactions. As shown on Fig. 1, the input is done through a keyboard and the output is manifested on the display (screen.) The application will run on Python and KivyMD, using the software program PyCharm via the file names project3.py and project3.kv, respectively. Additionally, the various inputs from the user will all be stored in an SQL database called project3.db.
 
@@ -49,7 +45,6 @@ The system diagram is a visual model of the application, its components and thei
 The wireframe provides a visual representation of the gallery’s outline of the GUI. It also displays the functionalities of every button planned out to be utilized in the application. When the app is opened, the user first encounters a login page. If the user already has an account, they will simply input their user data correctly and access to the gallery will be granted. If they click the register button, though, they will be led to the registration screen where they can create a new account by entering their desired username, email, and password. After closing the register button, they will be taken back to the login page where they will need to input their user information accordingly to access the gallery. Once the user enters the gallery, they will find the menu/main page where they can choose whether to add an art piece, look at the history of added artworks, or logout. If the “Add Artwork” button is pressed, the user will be able to input the information about the art work. After all of the data has been collected the user will need to press the button save to ensure the information inputted goes into the database (project3.db). To go back to the main menu, the button “back” is pressed. If the option “History” is picked, the user will be redirected to a table screen where all the logged artworks are. The user can manipulate the data as desired/needed. Finally, to exit the application the user simply needs to press the button “Logout” and they will return to the login page.  
 
 ### ER Diagram
-
 
 ##### Figure 3. ER Diagram For the Attributes Requested By the Client
 
@@ -99,7 +94,7 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 26 | Write the test plan | Assessments/checks to ensure the program runs as expected | 50 min | Mar 7 | B |
 | 27 | Draw flow diagrams | Flow diagrams that outline the sequence of the program | 60 min | Mar 7 | B | 
 | 28 | Record video | Video demonstrating and describing the product and how the success criteria has been met | 20 min | Mar 9 | D |
-| 29 | Finalize repository | Repository that contains the work done for the development of the project along with detailed descriptions of every step. | 50 min | Mar 9 / 10 | A / B / C / D | 
+| 29 | Finalize repository | Repository that contains the work done for the development of the project along with detailed descriptions of every step. | 50 min | Mar 9 / 10 | B / C / D | 
 
 ## Criteria C: Development
 
@@ -121,6 +116,5 @@ The wireframe provides a visual representation of the gallery’s outline of the
 ## Criteria D: Functionality
 
 ##### Figure 7. Video to show the applications functionality and extensibility 
-
 
 ## Works Cited
