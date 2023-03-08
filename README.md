@@ -90,32 +90,16 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 17 | Create an add artwork page | A page where the user will be able to add an art piece, its details and save it | 70 min | Mar 2 | C |
 | 18 | Add date picker to add artwork page | Date picker will be implemented and when used, the program should display a calendar for the user to choose the date | 60 min | Mar 2 | C |
 | 19 | Create artwork history page | A page that allows the user to view all of the art works stored within the database | 80 min | Mar 2 | C |
-| 20 | 
-| 21 |
-| 22 |
-| 23 |
-| 24 |
-
-
-18	Add checkboxes to add flight system	Implement the usage of checkboxes for value selection. Have checkboxes for different pieces of flight information for the user to select from.	1 hour	2/27/2023	C
-19	Create search system for specific flights	Allow the user to search for specific flights by flight number and date.	1 hour	2/28/2023	C
-22	Validate all buttons and their actions	Making sure that each button executes the expected task and is accurately displayed within the application	1 hour	3/1/2023	C
-23	Create table displaying the results of searched flights	Retrieving requested data from the database of all flights, and displaying them in an organized table	1 hour	3/1/2023	C
-
-29	Write a program that allows the user to search for flights based off flight number or date	The user will be able to enter flight numbers or dates to search for flights. Requested information from the user will be displayed onto a table	1 hour 30 minutes	3/1/2023	C
-30	Create search flight page	Have a page that allows the user to search for flights.	10 minutes	3/1/2023	C
-31	Create UML Diagram and write a brief description	Have a clear UML Diagram that accurately shows the different classes and methods used with a brief explanation	30 minutes	3/2/2023	B
-32	Write the test plans	Procedures one should take to test the program and the expected outcome of each test is recorded	45 minutes	3/2/2023	B
-33	Create flow diagrams and write brief explanations for each	Have accurate flow diagrams for different parts of the porgram with brief explanations	1 hour	3/5/2023	B
-34	Present final product to client	Meet with client to deliver the final product of the application	20 minutes	3/5/2023	A
-35	Finish Criteria C	Write the descriptions of the code and the detail of the techniques that were used `	2 hours	3/6/2023	C
-36	Finish video for Criteria D	Video evidence of all the success criterias functioning and working within the developed applicaiton	20 minutes	3/6/2023	D
-
-
-Create UML Diagram and write a brief description	Have a clear UML Diagram that accurately shows the different classes and methods used with a brief explanation
-31	Consolidating and commenting code	To have the code finalized and organized for easy-understanding	1 hr	Mar 7	C
-
-|  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Mar 9 | D |
+| 20 | Add checkboxes to the history page | Checkboxes that will allow the user to select certain values | 70 min | Mar 3 | C |
+| 21 | Create search system for artworks | Allow the user to look for specific art pieces based on artist and title | 120 min | Mar 4 | C |
+| 22 | Create table that displays search results | Printed requested values from database | 80 min | Mar 4 | C |
+| 23 | Validate all buttons | All buttons execute their expected behaviours | 120 min | Mar 5 | C | 
+| 24 | Create UML diagram | Visual representation that showcases the different classes and methods used in the application | 40 min | Mar 5 | B | 
+| 25 | Create ER diagram | Diagram that illustrates the objects in the application and how they relate to each other | 40 min | Mar 6 | B |
+| 26 | Write the test plan | Assessments/checks to ensure the program runs as expected | 50 min | Mar 7 | B |
+| 27 | Draw flow diagrams | Flow diagrams that outline the sequence of the program | 60 min | Mar 7 | B | 
+| 28 | Record video | Video demonstrating and describing the product and how the success criteria has been met | 20 min | Mar 9 | D |
+| 29 | Finalize repository | Repository that contains the work done for the development of the project along with detailed descriptions of every step. | 50 min | Mar 9 / 10 | A / B / C / D | 
 
 ## Criteria C: Development
 
