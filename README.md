@@ -75,13 +75,13 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 6 | Write design statement | A coherent design statement that outlines the plan for the project | 20 min | Feb 24 | A | 
 | 7 | Edit rationale for proposed solution | A more appropriate and fitting rationale based on the client's feedback | 10 min | Feb 24 | A |
 | 8 | Create the system diagram | To have a concrete idea of the software and hardware requirements involved in the development of the application | 50 min | Feb 25 | B |
-| 9 | 
+| 9 | Create the application's wireframe | Visual representation of the structure of the application | 30 min | Feb 25 | B |
+| 10 | Initialize database handler | Set-up the base for the databse in order for functions to be added | 20 min | Feb 26 | C |
+| 11 | Build password policy | Completed password policy that encourages user to pick impenetrable passwords  | 20 min | Feb 27 | C |
+| 12 | Create registration system | A multi-step registration code program that registers and stores the data inputted into the database | 40 min | Feb 27 | C | 
+| 13 | Create login system | A secure program that allows the user to login to the application using an existing username and password | 40 min | Feb 28 | C | 
+| 14 | Code password encryption | Secure storage of user's password as it will be encrypted utilizing sha256 | 45 min | Feb 28 | C |
 
-| 10 |
-| 11 | 
-| 12 |
-| 13 |
-| 14 |
 | 15 |
 | 16 |
 | 17 |
@@ -94,12 +94,10 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 24 |
 
 
-| 7 | Develop MVP (Minimum Viable Product) | Test basic product before moving towards the final one | 120 min | Dec 02 | B |
-| 9 | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
+Create UML Diagram and write a brief description	Have a clear UML Diagram that accurately shows the different classes and methods used with a brief explanation
 
-
-|  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Dec 12 | D |
-|  | Polish details on repository | Gather everything that must be added | 40 min | Dec 12 | B |
+|  | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
+|  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Mar 9 | D |
 
 
 ## Criteria C: Development
