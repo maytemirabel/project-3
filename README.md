@@ -67,12 +67,13 @@ The wireframe provides a visual representation of the gallery’s outline of the
 ### Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1 | Meet with client  | Discuss and understand the requirements needed for the project  | 10 min | Feb 22 | A |
-| 2 | Brainstorm and write the problem context | A concise problem definition of what the client is requires | 20 min | Feb 22 | A | 
-| 3 | Build success criteria | 
-| 4 | Write design statement | A descriptive and articulated outline of the project | 
-| 5 | Describe rationale for proposed solution | 
-| 6 | Draw system diagram and write the caption |
+| 1 | Meet with client  | Discuss and understand the problem they are struggling with and brainstrom possible plans to solve these issues | 15 min | Feb 20 | A | 
+| 2 | Brainstorm and write the problem context | A concise problem definition of what the client is requires | 20 min | Feb 20 | A | 
+| 3 | Write rationale for proposed solution | A detailed description and reasoning for the developed solution | 30 min | Feb 20 | A |
+| 4 | Write success criteria | A | A | 20 min | Feb 22 | A |  
+
+| 5 | | 
+| 6 |  |
 | 7 | 
 | 8 |
 | 9 | 
@@ -91,8 +92,17 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 22 |
 | 23 |
 | 24 |
+Draw system diagram and write the caption
 
-
+4	"Brainstorm and write down success criterias "	A clear success criteria that suits the client and resolves the problem	20 minutes	2/10/2023	A
+5	Brainstorm and write down a design statement for the client	A clear design statement that suits the need of the client	15 minutes	2/10/2023	A
+6	Write the rationale for proposed solution	A clear justification that suits the client and developer.	30 minutes	2/10/2023	A
+7	Create system diagram	To have a clear idea of the hardware and software requirements for the proposed solution	45 minutes	2/10/2023	B
+3	Rationale for Proposed Solution	A clear justification that suits the client and developer.	15 minutes	2/10/2023	A
+4	"Brainstorm and write down success criterias "	A clear success criteria that suits the client and resolves the problem	20 minutes	2/10/2023	A
+5	Brainstorm and write down a design statement for the client	A clear design statement that suits the need of the client	15 minutes	2/10/2023	A
+6	Write the rationale for proposed solution	A clear justification that suits the client and developer.	30 minutes	2/10/2023	A
+7	Create system diagram	To have a clear idea of the hardware and software requirements for the proposed solution	45 minutes	2/10/2023	B
 
 | 7 | Develop MVP (Minimum Viable Product) | Test basic product before moving towards the final one | 120 min | Dec 02 | B |
 | 9 | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
