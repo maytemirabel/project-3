@@ -95,6 +95,8 @@ The wireframe provides a visual representation of the gallery’s outline of the
 
 
 Create UML Diagram and write a brief description	Have a clear UML Diagram that accurately shows the different classes and methods used with a brief explanation
+Creating Test Plan	To have a test plan created for confirming if the application works to standard	1.5 hr	Mar 7	C
+31	Consolidating and commenting code	To have the code finalized and organized for easy-understanding	1 hr	Mar 7	C
 
 |  | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
 |  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Mar 9 | D |
