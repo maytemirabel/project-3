@@ -85,10 +85,10 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 12 | Create registration system | A multi-step registration code program that registers and stores the data inputted into the database | 40 min | Feb 27 | C | 
 | 13 | Create login system | A secure program that allows the user to login to the application using an existing username and password | 40 min | Feb 28 | C | 
 | 14 | Code password encryption | Secure storage of user's password as it will be encrypted utilizing sha256 | 45 min | Feb 28 | C |
-
-| 15 |
-| 16 |
+| 15 | Create menu page | A page where the user, once logged into the application, can choose what to do | 90 min | Mar 1 | C |
+| 16 | Set up table for all artworks | A table inside the database that includes all of the art pieces data | 20 min | Mar 1 | C |
 | 17 |
+
 | 18 |
 | 19 |
 | 20 |
@@ -97,12 +97,30 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 23 |
 | 24 |
 
+14	Create an add flight page	Have a page that allows the user to add flights into the 'allflights' table within the database	15 minutes	2/23/2023	C
+15	Program the add flight system	Have a fully functional program that allows the user to enter all flight information and save it. The data entered should be stored into the database and shown in the table with all flight information	2 hours	2/27/2023	C
+16	Add time picker to add flight system	Implement the time picker from KivyMD library into the add flight system. Program should display a clock that allows the user to select time.	45 minutes	2/27/2023	C
+17	Add date picker to add flight system	Implement the date picker from KivyMD library into the add flight system. Program should display a calendar for the user to select the date.	45 minutes	2/27/2023	C
+18	Add checkboxes to add flight system	Implement the usage of checkboxes for value selection. Have checkboxes for different pieces of flight information for the user to select from.	1 hour	2/27/2023	C
+19	Create search system for specific flights	Allow the user to search for specific flights by flight number and date.	1 hour	2/28/2023	C
+20	Create airport map page	Have a page that shows a map of the airport and the current date's flights at their gate	2 hours	3/1/2023	C
+21	Create flight history page	Have a page that shows all values stored within the database	1 hour	3/1/2023	C
+22	Validate all buttons and their actions	Making sure that each button executes the expected task and is accurately displayed within the application	1 hour	3/1/2023	C
+23	Create table displaying the results of searched flights	Retrieving requested data from the database of all flights, and displaying them in an organized table	1 hour	3/1/2023	C
+
+29	Write a program that allows the user to search for flights based off flight number or date	The user will be able to enter flight numbers or dates to search for flights. Requested information from the user will be displayed onto a table	1 hour 30 minutes	3/1/2023	C
+30	Create search flight page	Have a page that allows the user to search for flights.	10 minutes	3/1/2023	C
+31	Create UML Diagram and write a brief description	Have a clear UML Diagram that accurately shows the different classes and methods used with a brief explanation	30 minutes	3/2/2023	B
+32	Write the test plans	Procedures one should take to test the program and the expected outcome of each test is recorded	45 minutes	3/2/2023	B
+33	Create flow diagrams and write brief explanations for each	Have accurate flow diagrams for different parts of the porgram with brief explanations	1 hour	3/5/2023	B
+34	Present final product to client	Meet with client to deliver the final product of the application	20 minutes	3/5/2023	A
+35	Finish Criteria C	Write the descriptions of the code and the detail of the techniques that were used `	2 hours	3/6/2023	C
+36	Finish video for Criteria D	Video evidence of all the success criterias functioning and working within the developed applicaiton	20 minutes	3/6/2023	D
+
 
 Create UML Diagram and write a brief description	Have a clear UML Diagram that accurately shows the different classes and methods used with a brief explanation
-Creating Test Plan	To have a test plan created for confirming if the application works to standard	1.5 hr	Mar 7	C
 31	Consolidating and commenting code	To have the code finalized and organized for easy-understanding	1 hr	Mar 7	C
 
-|  | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
 |  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Mar 9 | D |
 
 ## Criteria C: Development
