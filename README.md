@@ -55,14 +55,18 @@ The wireframe provides a visual representation of the gallery’s outline of the
 
 ### UML Diagram
 
-
 ##### Figure 4. The UML Diagram For the Classes In the Application
 
 
 ### Flow Diagrams
 
-### Test Plan
+##### Figure 5. Flow diagram of 
 
+##### Figure 6. Flow diagram of
+
+##### Figure 7. Flow diagram of
+
+### Test Plan
 
 ### Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
@@ -101,13 +105,9 @@ Creating Test Plan	To have a test plan created for confirming if the application
 |  | Create flowcharts | Clearly display the codes utilized in the making of the product | 60 min | Dec 04 | B |
 |  | Video creation | Demonstrate and describe the product and how the success criteria has been met | 40 min | Mar 9 | D |
 
-
 ## Criteria C: Development
 
 ### Techniques Used
-
-
-
 
 ### GUI Creating Using KivyMD
 
@@ -116,6 +116,8 @@ Creating Test Plan	To have a test plan created for confirming if the application
 ```
 
 ## Criteria D: Functionality
+
+##### Figure 7. Video to show the applications functionality and extensibility 
 
 
 ## Works Cited
