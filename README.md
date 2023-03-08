@@ -86,21 +86,18 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 13 | Create login system | A secure program that allows the user to login to the application using an existing username and password | 40 min | Feb 28 | C | 
 | 14 | Code password encryption | Secure storage of user's password as it will be encrypted utilizing sha256 | 45 min | Feb 28 | C |
 | 15 | Create menu page | A page where the user, once logged into the application, can choose what to do | 90 min | Mar 1 | C |
-| 16 | Set up table for all artworks | A table inside the database that includes all of the art pieces data | 20 min | Mar 1 | C |
-| 17 |
-
-| 18 |
+| 16 | Set up table for all artworks | A table inside the database that includes all of the data concening the art pieces | 20 min | Mar 1 | C |
+| 17 | Create an add artwork page | A page where the user will be able to add an art piece, its details and save it. | 70 min | Mar 2 | C |
+| 18 | Add date picker to add artwork page | Date picker will be implemented and when used, the program should display a calendar for the user to choose the date | 60 min | Mar 2 | C |
 | 19 |
+
 | 20 |
 | 21 |
 | 22 |
 | 23 |
 | 24 |
 
-14	Create an add flight page	Have a page that allows the user to add flights into the 'allflights' table within the database	15 minutes	2/23/2023	C
-15	Program the add flight system	Have a fully functional program that allows the user to enter all flight information and save it. The data entered should be stored into the database and shown in the table with all flight information	2 hours	2/27/2023	C
-16	Add time picker to add flight system	Implement the time picker from KivyMD library into the add flight system. Program should display a clock that allows the user to select time.	45 minutes	2/27/2023	C
-17	Add date picker to add flight system	Implement the date picker from KivyMD library into the add flight system. Program should display a calendar for the user to select the date.	45 minutes	2/27/2023	C
+
 18	Add checkboxes to add flight system	Implement the usage of checkboxes for value selection. Have checkboxes for different pieces of flight information for the user to select from.	1 hour	2/27/2023	C
 19	Create search system for specific flights	Allow the user to search for specific flights by flight number and date.	1 hour	2/28/2023	C
 20	Create airport map page	Have a page that shows a map of the airport and the current date's flights at their gate	2 hours	3/1/2023	C
