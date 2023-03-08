@@ -108,6 +108,13 @@ Creating Test Plan	To have a test plan created for confirming if the application
 ## Criteria C: Development
 
 ### Techniques Used
+1. For loops
+2. If-else statements
+3. Functions
+4. Password encryption 
+5. Object Oriented Programming
+6. GUI building using KivyMD Library
+7. Working with SQLite databases 
 
 ### GUI Creating Using KivyMD
 
