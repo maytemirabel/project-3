@@ -62,9 +62,12 @@ The wireframe provides a visual representation of the gallery’s outline of the
 ##### Figure 7. Flow diagram of
 
 ### Test Plan
+
+Test plan for tester to follow to test the application. There are 3 different types of tests presented in the test plan which are unit test(to test one part of the program), integration test(to test the cooperation of different parts) and code review(to check the quality of code). In addition, description, input(step to follow) and expected output are also presented in the table for user to follow and knnow what to expect from each test.
+
 | Test No| Test type | Description | Input | Outcome |
 |--------|-----------|-------------|-------|---------|
-| 1 | Unit test |
+| 1 | Unit test | 
 
 
 ### Record of Tasks
