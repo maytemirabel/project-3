@@ -65,9 +65,15 @@ The wireframe provides a visual representation of the gallery’s outline of the
 
 Test plan for tester to follow to test the application. There are 3 different types of tests presented in the test plan which are unit test(to test one part of the program), integration test(to test the cooperation of different parts) and code review(to check the quality of code). In addition, description, input(step to follow) and expected output are also presented in the table for user to follow and knnow what to expect from each test.
 
-| Test No| Test type | Description | Input | Outcome |
+| Test No| Test type | Description | Input / Procedure | Outcome |
 |--------|-----------|-------------|-------|---------|
-| 1 | Unit test | 
+| 1 | Unit test | Test whether the sign up screen successfully registers a new user if all input is valid | Once 
+
+ Go to sign up screen and enter the following values:
+- email: bob@isak
+- username: bob
+-password: bob123	When the database, spentio.db is checked, a new row of data can be seen. This row shows the entered email, username, and password encrypted using a certain hash.
+
 
 
 ### Record of Tasks
