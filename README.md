@@ -68,21 +68,10 @@ The wireframe provides a visual representation of the gallery’s outline of the
 | 2 | Functional: Unit test | Assess whether the login system works | 1) Run the program. 2) Input username and password. 3) Click the "Login" button. | If both the username and password have been previously registered into the database, the application will allow the user to enter the application. If the data cannot be found, a message allerting the user their inputs are invalid will show up.   
 | 3 | Functional: Unit test | Add artwork page | 1) Run the program. 2) Login. 3) Click the "Add Artwork" button. 4) Input all of the data required. 5) Click "Submit". | A message stating the artwork has been successfully added will appear if all relevant data has been entered. |  
 | 4 | Functional: Unit test | Test for logout system | 1) Run the application. 2) Login with a registered user. 3) Once on the menu, press the "Logout" button on the menu page. | If successful, the user should be directed back to the log in screen. | 
-| 5 | Functional: Integration test | Art works database | 
-| 6 | Functional: Integration test | Delete artwork
-| 7 | Functional: Integration test | Search system
-| 9 | Non-functional: Code review | Assessing the code of the entire application. Variable names, function names, and comments are utilized adequately. | 
-
-
-Food items database	Functional: Integration test	1. Run the program 2. Login 3. Click "Add item" button 4. Input owner, title 5. Select type of food 6. Input any additional notes 7. Select expiration date 8. Click add item 9. Check 'items' table in project3.db	All relevant data regarding the food information should be stored in the database, and stored in the 'items' table. The table in the database should be updated whenever a new item is added or removed.
-
-Delete Item System	Functional: Unit test	1. Run the program 2. Login 3. Click "view list" button 4. Click on checkboxes of the item(s) that the user wants to delete 5. Click "delete item" button	A checkmark will show up inside the box when the user selects the checkbox next to the item. The selected item(s) should then be deleted from the table when they click the delete item button.
-
-Search Item System	Functional: Integration test	1. Run the program 2. Login 3. Click the "view list" button 4. Input any information regarding the item, they are looking for 5.Click the magnifying glasses icon button	After entering one of the information regarding the item they are looking for in the textfeild and clicking the icon button, the table would only show that item or all the items that match the description. The database should be opened for the data displayed on the table. Once they click the icon button again, the table will go back to displaying every item.
-
-
-Code review	Non-functional: code review	assessing the code in project3.py to see whether the variable names, function names, and comments are suitable	The user can better grasp how the code works according to the variable names and comment. The code should be simple to understand and easy to follow.
-
+| 5 | Functional: Integration test | Art works database | 1) Run the program. 2) Login. 3) Click "Add Artwork" button. 4) Input data as needed. 5) Click "Save" button. 6) Revise database on PyCharm. The information inputted on the artwork should be stored in the 'artworks' table. | The table in the databse for the artworks should show the new item added.   
+| 6 | Functional: Integration test | Check whether the delete buton works. | 1) Run the program. 2) Login. 3) Click "History" button 4) Click on checkboxes of the artwork(s) that the user wants to delete. 5) Click "Delete" button. | When this is performed, the box next to the artwork will have a checkmark which indicates a certain item is selected. The selected artwork(s) should be deleted not only from the table on the History page itself but also the database. | 
+| 7 | Functional: Integration test | Search system retrieves the data that is looked for. | 1) Run the program. 2) Login. 3) Click the "History" button. 4) Input the attribute of any artwork as desired. 5) Click the magnifying glass icon button. | A table displaying the information that matches the description that is being sought for (if such exists within the database) wil appear. |
+| 8 | Non-functional: Code review | Assessing the code of the entire application. | Variable names, function names, and comments are utilized adequately. | Future developers will be able to easily read and follow the program that was created. They will understand why and how certain choices were made. | 
 
 Test plan containing established procesures to assess the fucntionality of the application. The test plan displays the 3 different types of tests are presented (unit test, integration test and code review.) Aditionally, the descryption along with the input / procedure ad outcome outline what is expected from the user and what is expected from the application for the test to be analyzed. 
 
