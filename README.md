@@ -67,7 +67,8 @@ Test plan for tester to follow to test the application. There are 3 different ty
 
 | Test No| Test type | Description | Input / Procedure | Outcome |
 |--------|-----------|-------------|-------|---------|
-| 1 | Unit test | Test whether the sign up screen successfully registers a new user if all input is valid | Once 
+| 1 | Unit test | Test whether the sign up screen successfully registers a new user if all input is valid | Once |. |
+| | Unit test | Test for logout system | Press the logout button on the menu page | If successful, the user should be directed back to the log in screen | 
 
  Go to sign up screen and enter the following values:
 - email: bob@isak
