@@ -62,6 +62,10 @@ The wireframe provides a visual representation of the gallery’s outline of the
 ##### Figure 7. Flow diagram of
 
 ### Test Plan
+| Test type | Description | Input | Outcome |
+|-----------|-------------|-------|---------|
+| Unit test |
+
 
 ### Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
