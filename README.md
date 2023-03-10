@@ -138,6 +138,53 @@ from kivymd.uix.dialog import MDDialog
 from kivymd.uix.pickers import MDDatePicker
 ```
 
+### Login
+This is the Python code within KivyMD which enables communication between Python and the inputs provided through KivyMD's unique IDs, namely the "username" and "password" fields. Through the functions "query_user" and "query_password," Python can verify the credibility of the inputs by checking the database. If the entered username does not exist in the database, the KivyMD text will display "Error: User does not exist." Similarly, if the entered password does not match the username, the KivyMD text will display "Error: Wrong Password."
+
+Initially, I faced difficulty in matching the credentials entered with the inputs from KivyMD. To overcome this, I utilized the functions I created, such as "verify_password," but was unsure how to prevent someone from logging in if they entered the wrong string. To address this, I incorporated if statements. The first if statement verifies if the entered username is present in the database, and if not, displays the message "Error: user does not exist." The second if statement verifies if the entered password is correct, utilizing the "verify_password" function. By using two separate if statements, I was able to validate each input with the database credentials.
+```.py
+#This is the class that relates to the <LoginScreen> in Kivy
+class LoginScreen(MDScreen):
+    def try_login(self):
+        # This function will verify if the entered username and password matches the credientials with the database
+        username=self.ids.username.text
+        password=self.ids.password.text
+        db=my_database_handler("Project3.db")
+        user_id=db.query_user(username=username)
+        if user_id:
+            id, username, email, hashed_password = user_id
+            if verify_password(password=password, hashed=hashed_password):
+                self.parent.current = "MainScreen"
+                self.ids.login_label.text = ""
+                self.ids.username.text = ""
+                self.ids.password.text = ""
+            else:
+                self.ids.login_label.text = "Error: Wrong Password"
+        else:
+            self.ids.login_label.text = "Error: User Does Not Exist"
+```
+
+### Registration
+This is the Python code within KivyMD that receives all inputs, including email, username, and password, through unique IDs assigned by KivyMD. Python is responsible for communicating with the database and inputting all data. The multiple inputs that are asked from the user fulfill with criteria cencerning security as the user's information will be safely stored.
+
+One challenge I faced while creating the registration screen was identifying each Kivy ID and connecting it to its respective variable name. Initially, I needed to understand the meaning of each variable, such as "self," "id," "email," and "text," which I found to be a relatively easy task with the help of my teacher and peers. With this understanding, I was able to smoothly proceed with the rest of the process and utilize the previously created functions to input data into the database.
+```.py
+class RegisterScreen(MDScreen):
+    def register(self):
+        email_entered = self.ids.email.text
+        username_entered=self.ids.username.text
+        password_entered=self.ids.password.text
+        db = my_database_handler("Project3.db")
+        db.create_new_user(username=username_entered,email=email_entered,password=password_entered)
+        db.close()
+        self.parent.current="LoginScreen"
+        self.ids.email.text = ""
+        self.ids.username.text = ""
+        self.ids.password.text = ""
+```
+
+
+
 ## Criteria D: Functionality
 https://drive.google.com/file/d/1p_P7YSiP1C-Ptgvc8LA3iDqo22CErs6c/view 
 ##### Figure 7. Video to show the applications functionality and extensibility 
