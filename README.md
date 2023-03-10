@@ -49,6 +49,7 @@ The wireframe provides a visual representation of the gallery’s outline of the
 ##### Figure 3. ER Diagram For the Attributes Requested By the Client
 
 ### UML Diagram
+<img width="635" alt="Screen Shot 2023-03-10 at 15 57 07" src="https://user-images.githubusercontent.com/105724334/224245455-393114c1-971f-49f8-a008-6ce6ae1fdc07.png">
 
 ##### Figure 4. The UML Diagram For the Classes In the Application
 
