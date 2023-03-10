@@ -119,8 +119,7 @@ Test plan containing established procesures to assess the fucntionality of the a
 6. GUI building using KivyMD Library
 7. Working with SQLite databases 
 
-### GUI Creating Using KivyMD
-## Setting up tools needed
+### Setting up tools needed
 In order to develop this application, libraries such as the KivyMD (chosen one to work with) need to be imported. The lines below showcase all of the tools that were used for the construction of the gallery, whether that is in the GUI creation or the programming. 
 ```.py
 # import sqlite for handling database
