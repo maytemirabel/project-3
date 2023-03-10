@@ -53,8 +53,9 @@ The wireframe provides a visual representation of the gallery’s outline of the
 ##### Figure 4. The UML Diagram For the Classes In the Application
 
 ### Flow Diagrams
+![IMG_0669](https://user-images.githubusercontent.com/105724334/224224069-6fe18845-65e9-468d-abe3-9ea4aad5b040.jpg)
 
-##### Figure 5. Flow diagram of 
+##### Figure 5. Flow diagram of Password Hashing
 
 ##### Figure 6. Flow diagram of
 
