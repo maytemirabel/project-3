@@ -236,6 +236,29 @@ class HistoryScreen(MDScreen):
         self.add_widget(self.data_tables)
 ```
 
+### Adding artworks
+This code shows an example of how the data the user enters will be saved. The database_worker class is created and connected to the SQLite database file "project3.db" using the line db = database_worker("project3.db"). Then, a SQL query is constructed as a formatted string using the variables owner, title, exp_date, location, type, and notes as values to insert into the items table using the INSERT INTO statement. The constructed SQL query is stored in the query variable. Next, the run_save() method of the database_worker class is called with the query variable as an argument to execute the SQL query and save the changes to the database. Finally, the close() method of the database_worker class is called to close the connection to the database.
+```.py
+db = database_worker("project3.db")
+# add items to the database
+query = f"INSERT into items (artist, title, date, description) values('{artist}', '{title}','{date}','{description}}')"
+db.run_save(query)
+db.close()  
+```
+### Searching for artworks
+```.py
+if self.ids.searchtext.text:
+    db = database_worker("project3.db")
+    searchword = self.ids.searchtext.text
+    # any information regarding the item
+    query = f"SELECT * FROM items WHERE artist='{searchword}' or title='{searchword}' or " \
+            f"date='{searchword}' or description ='{searchword}"
+    data = db.search(query)
+    db.close()
+    self.data_table.update_row_data(None, data)
+else:
+    self.update()  
+```
 ## Criteria D: Functionality
 https://drive.google.com/file/d/1p_P7YSiP1C-Ptgvc8LA3iDqo22CErs6c/view 
 ##### Figure 7. Video to show the applications functionality and extensibility 
