@@ -120,9 +120,22 @@ Test plan containing established procesures to assess the fucntionality of the a
 7. Working with SQLite databases 
 
 ### GUI Creating Using KivyMD
-
+## Setting up tools needed
+In order to develop this application, libraries such as the KivyMD (chosen one to work with) need to be imported. The lines below showcase all of the tools that were used for the construction of the gallery, whether that is in the GUI creation or the programming. 
 ```.py
+# import sqlite for handling database
+import sqlite3
+# import sha254_crypt for password hashing
+from passlib.hash import sha256_crypt
+# import datetime to use dates in the table
+from datetime import datetime
 
+# import kivyMD for GUI building
+from kivymd.app import MDApp
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.datatables import MDDataTable
+from kivymd.uix.dialog import MDDialog
+from kivymd.uix.pickers import MDDatePicker
 ```
 
 ## Criteria D: Functionality
