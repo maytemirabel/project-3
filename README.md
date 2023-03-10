@@ -45,13 +45,12 @@ The system diagram is a visual model of the application, its components and thei
 The wireframe provides a visual representation of the gallery’s outline of the GUI. It also displays the functionalities of every button planned out to be utilized in the application. When the app is opened, the user first encounters a login page. If the user already has an account, they will simply input their user data correctly and access to the gallery will be granted. If they click the register button, though, they will be led to the registration screen where they can create a new account by entering their desired username, email, and password. After closing the register button, they will be taken back to the login page where they will need to input their user information accordingly to access the gallery. Once the user enters the gallery, they will find the menu/main page where they can choose whether to add an art piece, look at the history of added artworks, or logout. If the “Add Artwork” button is pressed, the user will be able to input the information about the art work. After all of the data has been collected the user will need to press the button save to ensure the information inputted goes into the database (project3.db). To go back to the main menu, the button “back” is pressed. If the option “History” is picked, the user will be redirected to a table screen where all the logged artworks are. The user can manipulate the data as desired/needed. Finally, to exit the application the user simply needs to press the button “Logout” and they will return to the login page.  
 
 ### ER Diagram
-
+![IMG_0667](https://user-images.githubusercontent.com/105724334/224199790-d0f165e9-3cd9-4658-8e37-a97c383ca66d.jpg)
 ##### Figure 3. ER Diagram For the Attributes Requested By the Client
 
 ### UML Diagram
 
 ##### Figure 4. The UML Diagram For the Classes In the Application
-
 
 ### Flow Diagrams
 
