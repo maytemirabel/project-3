@@ -143,17 +143,16 @@ This is the Python code within KivyMD which enables communication between Python
 
 Initially, I faced difficulty in matching the credentials entered with the inputs from KivyMD. To overcome this, I utilized the functions I created, such as "verify_password," but was unsure how to prevent someone from logging in if they entered the wrong string. To address this, I incorporated if statements. The first if statement verifies if the entered username is present in the database, and if not, displays the message "Error: user does not exist." The second if statement verifies if the entered password is correct, utilizing the "verify_password" function. By using two separate if statements, I was able to validate each input with the database credentials.
 ```.py
-#This is the class that relates to the <LoginScreen> in Kivy
 class LoginScreen(MDScreen):
     def try_login(self):
-        # This function will verify if the entered username and password matches the credientials with the database
+        # this function checks if the entered username and password matches the credientials with the database
         username=self.ids.username.text
         password=self.ids.password.text
         db=my_database_handler("Project3.db")
         user_id=db.query_user(username=username)
         if user_id:
             id, username, email, hashed_password = user_id
-            if verify_password(password=password, hashed=hashed_password):
+            if check_password(password=password, hashed=hashed_password):
                 self.parent.current = "MainScreen"
                 self.ids.login_label.text = ""
                 self.ids.username.text = ""
@@ -198,15 +197,30 @@ def check_password(hashed_password, user_password):
     return hasher.verify(hashed_password, user_password)
 ```
 
+### Show password 
+The function first retrieves the password input field object using the self.ids dictionary and the passwd id. It then checks if the password attribute of the password field object is True. If it is, the function sets the password attribute to False and changes the helper_text_mode of the password field to 'persistent', which will display a helper text below the field. This is done so that the user can see the password they are typing.
+
+If the password attribute of the password field is False, meaning the password is currently visible, the function sets the password attribute to True and changes the helper_text_mode of the password field to 'on_focus', which will display the helper text only when the field is in focus. this function provides a simple way for users to toggle the visibility of their password while typing it into a password field.
+```.py
+def show_password(self): #make input password visible
+        password_field = self.ids.passwd
+        if password_field.password:
+            password_field.password = False
+            password_field.helper_text_mode = 'persistent'
+        else:
+            password_field.password = True
+            password_field.helper_text_mode = 'on_focus'
+```
+
 ### History
 This is the Python code within KivyMD that operates in reverse and requires data input from the database. The db.query_sleep() function is used to query the "sleepdata" database with all available information. Additionally, the built-in KivyMD MDDataTable is used to create the table itself, specifying its size, position, columns, and rows.
 
 The most challenging aspect of this process was creating the data table. Initially, I assumed the table could be created through KivyMD, but later realized that it must be created in Python. Through research and consulting with my teacher, I concluded that a table could be crafted using resources available on the KivyMD website. After successfully creating a table that looked decent and included all necessary columns and data, importing data from the database was a straightforward task, utilizing the previously created function.
 ```.py
 class HistoryScreen(MDScreen):
-    # This is a class attribute
+    # this is a class attribute
     data_tables = None
-    # This will get data from the database
+    # this will get data from the database
     def on_pre_enter(self, *args):
         db=my_database_handler("Project3.db")
         query = db.query_sleep()
