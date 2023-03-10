@@ -182,8 +182,45 @@ class RegisterScreen(MDScreen):
         self.ids.username.text = ""
         self.ids.password.text = ""
 ```
+### Password hashing
+This code is importing the sha256_crypt module from the Passlib library and then creating a hasher object using that module with 30,000 rounds. The encrypt_password function takes an unsafe user password and returns a hashed password using the hasher object created earlier. This function is used to encrypt the password before storing it in a database or comparing it to a stored hashed password. The check_password function is used to verify if the user-entered password matches the hashed password stored in the database. It takes in the hashed password and user-entered password as arguments and returns a boolean value indicating if the passwords match. Overall, this code demonstrates the use of Passlib to create secure hashed passwords and verify user-entered passwords during authentication.d
+```.py 
+from passlib.hash import sha256_crypt
 
+hasher = sha256_crypt.using(rounds=30000)
 
+#this function receives the unsafe password and
+# returns the hashed password
+def encrypt_password(user_password):
+    return hasher.hash(user_password)
+
+def check_password(hashed_password, user_password):
+    return hasher.verify(hashed_password, user_password)
+```
+
+### History
+This is the Python code within KivyMD that operates in reverse and requires data input from the database. The db.query_sleep() function is used to query the "sleepdata" database with all available information. Additionally, the built-in KivyMD MDDataTable is used to create the table itself, specifying its size, position, columns, and rows.
+
+The most challenging aspect of this process was creating the data table. Initially, I assumed the table could be created through KivyMD, but later realized that it must be created in Python. Through research and consulting with my teacher, I concluded that a table could be crafted using resources available on the KivyMD website. After successfully creating a table that looked decent and included all necessary columns and data, importing data from the database was a straightforward task, utilizing the previously created function.
+```.py
+class HistoryScreen(MDScreen):
+    # This is a class attribute
+    data_tables = None
+    # This will get data from the database
+    def on_pre_enter(self, *args):
+        db=my_database_handler("Project3.db")
+        query = db.query_sleep()
+        db.close()
+
+        self.data_tables = MDDataTable(
+            use_pagination = True,
+            size_hint = (0.9,0.6),
+            pos_hint = {"center_x": 0.5, "top": 0.75},
+            column_data = [("Date", 65), ("Duration / hrs", 65), ("Quality / 10", 65), ("location", 75)],
+            row_data = query
+        )
+        self.add_widget(self.data_tables)
+```
 
 ## Criteria D: Functionality
 https://drive.google.com/file/d/1p_P7YSiP1C-Ptgvc8LA3iDqo22CErs6c/view 
