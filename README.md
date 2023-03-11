@@ -179,8 +179,8 @@ class RegisterScreen(MDScreen):
         email_entered = self.ids.email.text
         username_entered=self.ids.username.text
         password_entered=self.ids.password.text
-        db = my_database_handler("Project3.db")
-        db.create_new_user(username=username_entered,email=email_entered,password=password_entered)
+        db = my_database_handler("project3.db")
+        db.create_new_user(username = username_entered, email = email_entered, password = password_entered)
         db.close()
         self.parent.current="LoginScreen"
         self.ids.email.text = ""
@@ -231,15 +231,15 @@ class HistoryScreen(MDScreen):
     data_tables = None
     # this will get data from the database
     def on_pre_enter(self, *args):
-        db=my_database_handler("Project3.db")
-        query = db.query_sleep()
+        db = database_worker("project3.db")
+        query = db.query_artwork()
         db.close()
 
         self.data_tables = MDDataTable(
             use_pagination = True,
             size_hint = (0.9,0.6),
             pos_hint = {"center_x": 0.5, "top": 0.75},
-            column_data = [("Date", 65), ("Duration / hrs", 65), ("Quality / 10", 65), ("location", 75)],
+            column_data = [("Artist", 65), ("Title", 65), ("Date", 65), ("Description", 75)],
             row_data = query
         )
         self.add_widget(self.data_tables)
@@ -271,7 +271,6 @@ else:
 ```
 
 ### Delete artworks
-
 ```.py
     def delete(self):
         checked_rows = self.data_table.get_row_checks()
