@@ -143,25 +143,28 @@ from kivymd.uix.pickers import MDDatePicker
 This is the Python code within KivyMD which enables communication between Python and the inputs provided through KivyMD's unique IDs, namely the "username" and "password" fields. Through the functions "query_user" and "query_password," Python can verify the credibility of the inputs by checking the database. If the entered username does not exist in the database, the KivyMD text will display "Error: User does not exist." Similarly, if the entered password does not match the username, the KivyMD text will display "Error: Wrong Password."
 
 Initially, I faced difficulty in matching the credentials entered with the inputs from KivyMD. To overcome this, I utilized the functions I created, such as "verify_password," but was unsure how to prevent someone from logging in if they entered the wrong string. To address this, I incorporated if statements. The first if statement verifies if the entered username is present in the database, and if not, displays the message "Error: user does not exist." The second if statement verifies if the entered password is correct, utilizing the "verify_password" function. By using two separate if statements, I was able to validate each input with the database credentials.
+
 ```.py
 class LoginScreen(MDScreen):
     def try_login(self):
-        # this function checks if the entered username and password matches the credientials with the database
-        username=self.ids.username.text
-        password=self.ids.password.text
-        db=my_database_handler("Project3.db")
-        user_id=db.query_user(username=username)
-        if user_id:
-            id, username, email, hashed_password = user_id
-            if check_password(password=password, hashed=hashed_password):
-                self.parent.current = "MainScreen"
-                self.ids.login_label.text = ""
-                self.ids.username.text = ""
-                self.ids.password.text = ""
-            else:
-                self.ids.login_label.text = "Error: Wrong Password"
+        print("User trying to login")
+        username = self.ids.uname.text
+        password = self.ids.pwd.text
+        query = f"SELECT * from users WHERE username = '{uname}'"
+        db = database_worker("project3.db")
+        result = db.search(query = query)
+        db.close()
+        
+        if len(result) == 1:
+            print(result)
+            id, email, hashed, uname = result[0]
+            print(hashed, pwd)
+            if check_password(user_password=pwd, hashed_password=hashed):
+                print("Login successful")
+                self.parent.current = "MenuScreen"
         else:
-            self.ids.login_label.text = "Error: User Does Not Exist"
+            print("Passwords do not match. Try again!")
+            
 ```
 
 ### Registration
@@ -183,7 +186,11 @@ class RegisterScreen(MDScreen):
         self.ids.password.text = ""
 ```
 ### Password hashing
-This code is importing the sha256_crypt module from the Passlib library and then creating a hasher object using that module with 30,000 rounds. The encrypt_password function takes an unsafe user password and returns a hashed password using the hasher object created earlier. This function is used to encrypt the password before storing it in a database or comparing it to a stored hashed password. The check_password function is used to verify if the user-entered password matches the hashed password stored in the database. It takes in the hashed password and user-entered password as arguments and returns a boolean value indicating if the passwords match. Overall, this code demonstrates the use of Passlib to create secure hashed passwords and verify user-entered passwords during authentication.d
+This code is importing the sha256_crypt module from the Passlib library and then creating a hasher object using that module with 30,000 rounds. The encrypt_password function takes an unsafe user password and returns a hashed password using the hasher object created earlier. This function is used to encrypt the password before storing it in a database or comparing it to a stored hashed password. The check_password function is used to verify if the user-entered password matches the hashed password stored in the database. It takes in the hashed password and user-entered password as arguments and returns a boolean value indicating if the passwords match. Overall, this code demonstrates the use of Passlib to create secure hashed passwords and verify user-entered passwords during authentication.
+
+I had trouble with this function as I didn't know how to compare the two inputs together. However, with consultance from the library website and my peers, I was able to logically figure out that I needed two attributes in the function, the entered password and the hashed password, and use the .verify function to verify if it matches or not.
+
+
 ```.py 
 from passlib.hash import sha256_crypt
 
@@ -246,6 +253,7 @@ query = f"INSERT into items (artist, title, date, description) values('{artist}'
 db.run_save(query)
 db.close()  
 ```
+
 ### Searching for artworks
 ```.py
 if self.ids.searchtext.text:
@@ -260,6 +268,21 @@ if self.ids.searchtext.text:
 else:
     self.update()  
 ```
+
+### Delete artworks
+
+```.py
+    def delete(self):
+        checked_rows = self.data_table.get_row_checks()
+        print(checked_rows)
+        db = database_handler("spentio.db")
+        for r in checked_rows:
+            id=r[0]
+            query = f"DELETE from ledger where id={id}"
+            db.run_query(query)
+        db.close()
+        self.update(f"SELECT id,Date,Category,jpy,brz from ledger where user='{self.user1}'")
+ ```
 ## Criteria D: Functionality
 https://drive.google.com/file/d/1p_P7YSiP1C-Ptgvc8LA3iDqo22CErs6c/view 
 ##### Figure 7. Video to show the applications functionality and extensibility 
