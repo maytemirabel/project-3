@@ -121,12 +121,13 @@ Test plan containing established procesures to assess the fucntionality of the a
 7. Working with SQLite databases 
 
 ### Setting up tools needed
-In order to develop this application, libraries such as the KivyMD (chosen one to work with) need to be imported. The lines below showcase all of the tools that were used for the construction of the gallery, whether that is in the GUI creation or the programming. 
+In order to develop this application, libraries such as the KivyMD (chosen one to work with) need to be imported. The lines below showcase all of the tools that were used for the construction of the gallery, whether that is in the GUI creation or the programming. The sqlite3 library is utilzied to connect and manage an SQLite database, which is responsible for holding all the data regarding the different aspects of the artworks. To ensure the user's safety, the secure_password function was used which encrypts the user's password before it is stored in the database. Finally, the KivyMD Library is used to develop a visually appealing and user-friendly GUI. 
+
 ```.py
 # import sqlite for handling database
 import sqlite3
-# import sha254_crypt for password hashing
-from passlib.hash import sha256_crypt
+# import secure_password used for password hashing
+from secure_password import encrypt_password
 # import datetime to use dates in the table
 from datetime import datetime
 
