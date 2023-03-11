@@ -140,6 +140,17 @@ from kivymd.uix.datatables import MDDataTable
 from kivymd.uix.dialog import MDDialog
 from kivymd.uix.pickers import MDDatePicker
 ```
+### Setting up Database 
+This code snippet demonstrates a Python class named database_worker that facilitates communication with a SQLite database. To instantiate an object of this class, a parameter named "db" is passed to its init method, which represents the name of the database file.
+
+During the initialization process, the init method calls the sqlite3. connection function to create a connection object that points to the specified database file. Then, the cursor() method is invoked on this connection object to create a cursor object which can execute SQL commands on the database. Finally, the database_worker object retains the connection and cursor objects as attributes, allowing them to be utilized in other methods of the class.
+```.py 
+# initializing the database handler/worker
+class database_worker:
+    def __init__(self, project3):
+        self.connection = sqlite3.connect(project3)
+        self.cursor = self.connection.cursor()
+```
 
 ### Login
 This is the Python code within KivyMD which enables communication between Python and the inputs provided through KivyMD's unique IDs, namely the "username" and "password" fields. Through the functions "query_user" and "query_password," Python can verify the credibility of the inputs by checking the database. If the entered username does not exist in the database, the KivyMD text will display "Error: User does not exist." Similarly, if the entered password does not match the username, the KivyMD text will display "Error: Wrong Password."
