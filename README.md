@@ -284,6 +284,16 @@ else:
         db.close()
         self.update(f"SELECT id, artist, title, date, description from ledger where user='{self.artwork1}'")
  ```
+ 
+ ### Log out 
+```.py
+    def logout_popup(self):
+        self.popup = MDDialog(text = "Do you want to exit?", buttons = [MDFlatButton(text = 'No',on_release=self.close_popup_logout), MDFlatButton(text = 'Yes', on_release = self.logout)])
+        self.popup.open()
+    def logout(self,obj):
+        self.popup.dismiss()
+        self.parent.current='LoginScreen'
+```        
 ## Criteria D: Functionality
 https://drive.google.com/file/d/1p_P7YSiP1C-Ptgvc8LA3iDqo22CErs6c/view 
 ##### Figure 7. Video to show the applications functionality and extensibility 
