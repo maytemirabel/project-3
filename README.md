@@ -58,7 +58,9 @@ The wireframe provides a visual representation of the gallery’s outline of the
 
 ##### Figure 5. Flow diagram of Password Hashing
 
-##### Figure 6. Flow diagram of
+![Copy of Algorithm flowchart example](https://user-images.githubusercontent.com/105724334/224476812-41887b28-dbfe-41e1-a1d0-ac17a18f3d6b.png)
+
+##### Figure 6. Flow diagram of Delete Artwork
 
 ##### Figure 7. Flow diagram of
 
@@ -280,7 +282,7 @@ else:
             query = f"DELETE from ledger where id={id}"
             db.run_query(query)
         db.close()
-        self.update(f"SELECT id,Date,Category,jpy,brz from ledger where user='{self.user1}'")
+        self.update(f"SELECT id, artist, title, date, description from ledger where user='{self.artwork1}'")
  ```
 ## Criteria D: Functionality
 https://drive.google.com/file/d/1p_P7YSiP1C-Ptgvc8LA3iDqo22CErs6c/view 
