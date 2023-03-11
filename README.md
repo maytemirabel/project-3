@@ -186,10 +186,9 @@ class RegisterScreen(MDScreen):
         self.ids.password.text = ""
 ```
 ### Password hashing
-This code is importing the sha256_crypt module from the Passlib library and then creating a hasher object using that module with 30,000 rounds. The encrypt_password function takes an unsafe user password and returns a hashed password using the hasher object created earlier. This function is used to encrypt the password before storing it in a database or comparing it to a stored hashed password. The check_password function is used to verify if the user-entered password matches the hashed password stored in the database. It takes in the hashed password and user-entered password as arguments and returns a boolean value indicating if the passwords match. Overall, this code demonstrates the use of Passlib to create secure hashed passwords and verify user-entered passwords during authentication.
+This code is importing the sha256_crypt module from the Passlib library and then creating a hasher object using that module with 30,000 rounds. The encrypt_password function takes an unsafe user password and returns a hashed password using the hasher object created earlier. This function is used to encrypt the password before storing it in a database or comparing it to a stored hashed password. The check_password function is used to verify if the user-entered password matches the hashed password stored in the database. It takes in the hashed password and user-entered password as arguments and returns a boolean value indicating if the passwords match.
 
 I had trouble with this function as I didn't know how to compare the two inputs together. However, with consultance from the library website and my peers, I was able to logically figure out that I needed two attributes in the function, the entered password and the hashed password, and use the .verify function to verify if it matches or not.
-
 
 ```.py 
 from passlib.hash import sha256_crypt
